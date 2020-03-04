@@ -1,7 +1,7 @@
 import 'package:algorithm_visualizer/algorithms.dart';
 import 'package:algorithm_visualizer/data.dart';
-import 'package:flutter/material.dart';
 import 'package:algorithm_visualizer/visualizer_container.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(
@@ -125,7 +125,7 @@ class _MyAppState extends State<MyApp> {
         await algorithms.bubbleSort();
         break;
       case "Merge Sort":
-        await algorithms.mergeSort(0, dataSetLength);
+        await algorithms.mergeSort(0, dataSetLength - 1);
         break;
       default:
         break;
